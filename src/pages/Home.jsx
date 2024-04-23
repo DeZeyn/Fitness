@@ -4,6 +4,7 @@ import logo from "../logo.svg";
 import "../App.css";
 import Button from "../components/Button";
 import { ThemeContext } from "../main";
+import Header from "../components/Header";
 
 const products = [
   {
@@ -50,49 +51,7 @@ function App() {
 
   return (
     <>
-      <div>Test</div>
-      <div className="App">
-        <header className="App-header">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/programs">Programs</NavLink>
-          <img src={logo} className="App-logo" alt="logo" ref={imgRef} />
-          <h1 className="text-3xl font-bold underline">Hello world!</h1>
-          <p>
-            <Button
-              color="blue"
-              count={count}
-              clickHandler={() => setCount((currentCount) => currentCount + 1)}
-            />
-          </p>
-          {count > 5 && <div>COUNT IS 5 NOW</div>}
-          <p className="text-fitness-color-dark">
-            Edit <code>App.jsx</code> and save to test HMR updates.
-          </p>
-          {products.map((product, i) => (
-            <div key={`product-${i}`}>{product.productName}</div>
-          ))}
-          <p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-            {" | "}
-            <a
-              className="App-link"
-              href="https://vitejs.dev/guide/features.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Vite Docs
-            </a>
-            <label htmlFor="email">Test</label>
-          </p>
-        </header>
-      </div>
+     <Header />
     </>
   );
 }
