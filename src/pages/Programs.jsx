@@ -1,6 +1,7 @@
 import { useQuery, gql } from "@apollo/client";
 
 import NavLink from "../components/NavLink";
+import BottomNavigation from "../components/BottomNavigation";
 
 const GET_PROGRAMS = gql`
   query GetPrograms {
@@ -31,19 +32,15 @@ function Programs() {
   return (
     <>
       <div className="App">
-        <div>
-          <NavLink to="/">Home</NavLink>
-        </div>
-        <div>
-          <NavLink to="/programs">Programs</NavLink>
-        </div>
-
+        <h2>Browse</h2>
         {programs.map((program) => (
           <div key={program.id}>
             <a href={`/program/${program.id}`}>{program.name}</a>
           </div>
         ))}
+
       </div>
+      <BottomNavigation />
     </>
   );
 }

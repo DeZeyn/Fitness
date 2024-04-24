@@ -2,6 +2,7 @@ import { useLocation, useParams } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
 
 import NavLink from "../components/NavLink";
+import BottomNavigation from "../components/BottomNavigation";
 
 const GET_PROGRAM = gql`
   query GetProgram($id: ID!) {
@@ -38,12 +39,12 @@ function Program() {
 
   return (
     <>
-      <div>Test</div>
       <div className="App">
         <div>{program.name}</div>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/programs">Programs</NavLink>
       </div>
+      <BottomNavigation />
     </>
   );
 }
