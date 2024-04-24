@@ -9,9 +9,9 @@ import {
 } from "@apollo/client";
 
 import "./index.css";
-import Home from "./pages/Home";
-import Programs from "./pages/Programs";
-import Program from "./pages/Program";
+import Home from "./pages/Home.jsx";
+import Programs from "./pages/Programs.jsx";
+import Program from "./pages/Program.jsx";
 export const ThemeContext = createContext(null);
 
 const container = document.getElementById("root");
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
 ]);
 
 const client = new ApolloClient({
-  uri: "https://api-eu-central-1.hygraph.com/v2/cko4j7ro2ig7j01yz5tfzd0fi/master",
+  uri: "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clvb83eqs008b08mo2x470ll3/master",
   cache: new InMemoryCache(),
 });
 

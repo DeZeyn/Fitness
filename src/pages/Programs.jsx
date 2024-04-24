@@ -30,11 +30,14 @@ function Programs() {
 
   return (
     <>
-      <div>Test</div>
       <div className="App">
-        <div>Programs</div>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/programs">Programs</NavLink>
+        <div>
+          <NavLink to="/">Home</NavLink>
+        </div>
+        <div>
+          <NavLink to="/programs">Programs</NavLink>
+        </div>
+
         {programs.map((program) => (
           <div key={program.id}>
             <a href={`/program/${program.id}`}>{program.name}</a>

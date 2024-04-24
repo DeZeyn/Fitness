@@ -5,28 +5,13 @@ import "../App.css";
 import Button from "../components/Button";
 import { ThemeContext } from "../main";
 import Header from "../components/Header";
+import Hallo from "../components/Hallo";
+import woman from "../assets/Homelogo.svg";
 
-const products = [
+const users = [
   {
     id: 0,
-    productName: "Äthiopien",
-    price: 690,
-    description:
-      "MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft.",
-  },
-  {
-    id: 1,
-    productName: "Brasilien",
-    price: 880,
-    description:
-      "MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft.",
-  },
-  {
-    id: 2,
-    productName: "Brasilien",
-    price: 880,
-    description:
-      "MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft.",
+    name: "Phillip",
   },
 ];
 
@@ -51,7 +36,26 @@ function App() {
 
   return (
     <>
-     <Header />
+      <h1 className="ml-5 mt-8 font-bold text-4xl ">Hi Phillip!</h1>
+      <div>
+        <img
+          className="flex justify-center my-7 w-72 h-60 mx-auto"
+          src={woman}
+          alt=""
+        />
+      </div>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/programs">Programs</NavLink>
+      <NavLink to="/profil">Profil</NavLink>
+
+      <Button />
+
+      {/* <p className="text-fitness-color-dark">
+        Edit <code>Home.jsx</code> and save to test HMR updates.
+      </p>
+      {products.map((product, i) => (
+        <div key={`product-${i}`}>{product.productName}</div>
+      ))} */}
     </>
   );
 }
