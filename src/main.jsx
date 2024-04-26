@@ -12,6 +12,7 @@ import "./index.css";
 import Home from "./pages/Home.jsx";
 import Programs from "./pages/Programs.jsx";
 import Program from "./pages/Program.jsx";
+import Profil from "./pages/Profil.jsx";
 export const ThemeContext = createContext(null);
 
 const container = document.getElementById("root");
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/program/:id/workout/:workoutId/exercise/:exerciseId",
     element: <Program />,
+  },
+  {
+    path: "/profil",
+    element: <Profil />,
   },
 ]);
 

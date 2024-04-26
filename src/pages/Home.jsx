@@ -30,12 +30,13 @@ const GET_FIRST_PROGRAM = gql`
   }
 `;
 
-const users = [
+export const users = [
   {
     id: 0,
     name: "Phillip",
   },
 ];
+
 
 function App() {
   const [count, setCount] = useState(0);
