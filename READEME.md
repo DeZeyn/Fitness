@@ -1,3 +1,5 @@
+Gradient Background Image definieren für Linear Gradient 
+
 Footer Element wird in FEND Mentoring 08.04.2024 gezeigt in Minute 20:22. Nicht Eriks Lösung sondern die eines anderen Teilnehmers.
 
 Vite-plugin-svgr wird in Fend Mentoring 08.04.2024 gezeigt in Minute 26:15
@@ -13,7 +15,6 @@ Wie baue ich eine Navigation in FEND 10.04.2024 ca. Minute 50:00
 Liste der Programme aus Hygraph holen in FenD 10.04.2024 ab 54:00
 
 Fragen en Erik:
-- Lege ich selbst in Hygraph weitere Workouts an? Zwei sind ja schon drin. Einmal Get Movin und einmal fsefse.. 
 - In den einzelnen Componenten erstelle ich jeweils eine Query für die Daten, die ich benötige. Und dann verarbeite ich die Daten direkt in dert Componente. Richtig? Was ist in dem Zusammenhang MySQl und Sequeelize? Drwa SQL. 
 - Fragen zur Struktur:
 - Also für die Userdatenbank brauche ich im Gegensatz zu den Fitnessprogrammen keine Graphql Abfrage, sondern kann das über SQL machen. Richtig? 

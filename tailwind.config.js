@@ -10,7 +10,6 @@ module.exports = {
         green: "linear-gradient(-45deg, #F5FFA0, #3EF3E8);",
         blue: "linear-gradient(-45deg, #3A4AE4, #3B85E6, #3EE4E8, #3EF3E8)",
       },
-     
       fontFamily: {
         font: ["Poppins"],
       },
