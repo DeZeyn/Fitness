@@ -54,4 +54,8 @@ completed_at
 - Grundsätzlich den Ablauf der Fitnessapp verstehen. Dafür Erik nach dem Ablauf fragen bzw. selbst den Ablauf erklären
 - Ich habe die Bilder eingefügt und Chat GPT hat mir das vorgeschlagen: import { ReactComponent as HomeIcon } from '../assets/House.svg'; dann hätte ich die Bilder als </ HomeIcon > einbinden können. Das ging leider nicht. Ich habe das jetzt so gelöst <img src={HomeIcon} alt="" /> So steht es ja auch in der Documentation von Vite-plugin-svgr. Wäre ersteres aber nicht schöner gewesen?
 - Ich muss ja den User mit dem jewiligen Workout verknüpfen und den aktuellen Stand des Workouts speichern und dann weitergehen. Speichere ich den Stand auch über Hypraph? Theoretisch müsste das ja Geräteübergreifend funktionieren. Also Account anlegen und dann den Stand auf jedem Gerät abrufen können.
-- Eslint makert ja gewisse Dinge rot. Wie erkenne ich ob das ein Fehler ist oder nur eine Warnung? Wie und wann hebe die Makierung auf? 
+- Eslint makert ja gewisse Dinge rot. Wie erkenne ich ob das ein Fehler ist oder nur eine Warnung? Wie und wann hebe die Makierung auf?
+
+User in den Local Storage packen
+Helepers Ordner für den User 
+Hypgraph Imports in eigenen Ordner packen 

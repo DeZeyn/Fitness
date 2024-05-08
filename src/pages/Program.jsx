@@ -3,22 +3,7 @@ import { useQuery, gql } from "@apollo/client";
 
 import NavLink from "../components/NavLink";
 import BottomNavigation from "../components/BottomNavigation";
-
-const GET_PROGRAM = gql`
-  query GetProgram($id: ID!) {
-    program(where: { id: $id }) {
-      id
-      name
-      duration
-      workoutsWithDay {
-        day
-        workout {
-          name
-        }
-      }
-    }
-  }
-`;
+import { GET_PROGRAM } from "../helpers/GraphqlOperations";
 
 function Program() {
   const location = useLocation();
